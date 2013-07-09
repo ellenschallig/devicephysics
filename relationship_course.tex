@@ -1,41 +1,21 @@
-\section{Relationship to the course (3 to 4 pages)}
+\section{Relationship to the course (3 to 4 pages) NEEDS DIFFERENT TITLE IS UGLY}
 % Summarize the themes/aspects from the lecture course which are relevant for the paper which you will discuss. 
 % 
 % 
 % 
-% \subsection{Van Wees}
-% From the slides, reading material. Van Wees first because he was most fundamental about devices? Building up towards the more advanced organic stuff from Loi (as in the article).
-
-% \begin{itemize}
-% \item semionductor material, p-type, n-type
-% \item FET (explain JFET, MOSFET)
-% \item p-n junction / Schottky barrier (metal-semiconductor)
-% \item LET (also use explanation from Box 1 in paper)
-% \end{itemize}
-
 \subsection{Transistors}
 
-The ability to on a large scale produce transistors has been one of the biggest advancements in the 20th century. Transistors and derived devices are necessary components in every modern electronic device. They can amplify currents or switch the currents off completely. To make these transistors, one needs a material that can is capable of showing both characteristics of metals and of insulators, to be able to not only conduct currents, but also switch them off. These materials are called semiconductors, which have a band gap between the valence band and the conduction band. A pure semiconductor material behaves as an insulator, therefore doping of the material is needed to give it the metal-like properties.
+The ability to on a large scale produce transistors has been one of the biggest advancements in the 20th century. Transistors and derived devices are necessary components in every modern electronic device. They can amplify currents or switch them off completely. To make these transistors, one needs a material that is capable of showing both characteristics of metals and of insulators, to be able to not only conduct currents, but also switch them off. These materials are called semiconductors, which have a band gap between the valence band and the conduction band. A pure semiconductor material behaves as an insulator, therefore doping of the material is needed to give it the metal-like properties.
 
 \begin{figure}[!ht]
  \begin{center}
-  \includegraphics[width=0.8\textwidth]{ndoping}
-  \caption{N-type doping. Picture from \citet{vanweesbook}.}
-  \label{fig:ndoping}
+  \includegraphics[width=1\textwidth]{doping}
+  \caption{N-type doping and p-type doping. From \citet{vanweesbook}.}
+  \label{fig:doping}
  \end{center}
 \end{figure}
 
-Doping introduces either extra electrons ($n$-type doping) or extra holes ($p$-type doping) in a material. This is done by putting atoms with different covalent bond forming properties in the crystals. If the semiconductor is made from silicon, which forms 4 covalent bonds, to introduce extra electrons a material which forms 5 covalent bonds (e.g. arsenic) should be used. The extra electron is now only weakly bound to the ion, and new energy states are produced close to and below the conduction band. See also figure \ref{fig:ndoping}. For p-type doping a material that only forms 3 covalent bonds should be used. The `empty' place is a hole which can easily travel through the material. New acceptor states are produced just above the valence band (figure \ref{fig:pdoping}).\citep{vanweesbook} %[chapter 2.8 of Van Wees book]
-
-\begin{figure}[!ht]
- \begin{center}
-  \includegraphics[width=0.8\textwidth]{pdoping}
-  \caption{P-type doping. Picture from \citet{vanweesbook}.}
-  \label{fig:pdoping}
- \end{center}
-\end{figure}
-
-Therefore $p$-type semiconductors are semiconductors with holes the majority carriers, and $n$-type semiconductors have electrons as majority carriers.
+Doping (figure \ref{fig:doping} introduces either extra electrons ($n$-type doping) or extra holes ($p$-type doping) in a material. This is done by putting atoms with different covalent bond forming properties in the crystals. With silicon, which forms 4 covalent bonds, to introduce extra electrons a material which forms 5 covalent bonds (e.g. arsenic) should be used. The extra electron is now free to move. For p-type doping a material that only forms 3 covalent bonds should be used. The `empty' place is a hole which can freely travel through the material.
 
 Field-effect transistors are made of a combination of $n$-type and $p$-type semiconductors. The field effect refers to the control of the electrical conductivity of a material by the application of an external electric field. The working of a junction-FET (JFET) illustrates how this field effect is used.
 
@@ -47,9 +27,9 @@ Field-effect transistors are made of a combination of $n$-type and $p$-type semi
  \end{center}
 \end{figure}
 
-In figure \ref{fig:JFET} a diagram of a JFET is shown. In this case the channel through which the charge carriers flow (with a voltage difference between source and drain), is made of an $n$-type semiconductor, and the surrounding substrate is made of a $p$-type semiconductor. Therefore the mobile charge carriers in the channel are electrons. When the mobile holes in the substrate are pulled away by a negative voltage applied to the gate, only the static negative charges remain, called the depletion zone. This induces a negatively charged electric field, which penetrates into the channel and repels the electrons, effectively narrowing the channel. With a high enough gate voltage the channel can be completely `pinched off', resulting in a voltage-controlled switch.
+In figure \ref{fig:JFET} a diagram of a JFET is shown. In this example the channel through which the charge carriers flow (with a voltage difference between source and drain), is made of an $p$-type semiconductor, and the surrounding substrate is made of a $n$-type semiconductor. Therefore the mobile charge carriers in the channel are holes. When the mobile electrons in the substrate are pulled away by a negative voltage applied to the gate, only the static positive charges remain, which forms the depletion zone. This induces a positively charged electric field, which penetrates into the channel and repels the holes there, effectively narrowing the channel. With a high enough gate voltage the channel can be completely `pinched off', resulting in a voltage-controlled switch.
 
-There are other transistor designs that use the field effect in a similar way, a few of which are the MOSFET, MESFET, HEMT and the organic OFET. \textbf{(deze zin mag weg maar verzin dan iets anders afsluitends)}
+There are other transistor designs that use the field effect in a similar way, a few of which are the MOSFET, MESFET, and the organic OFET. %\textbf{(deze zin mag weg maar verzin dan iets anders afsluitends)}
 
 \subsection{Diodes}
 Not only the transistor has had a big impact on society, the field of light-emitting materials has also seen much progress. From indicator lamps to replacements for incandescent light bulbs, the light-emitting diode (LED) has gained a lot of ground.
@@ -57,29 +37,32 @@ Not only the transistor has had a big impact on society, the field of light-emit
 \begin{figure}[!ht]
  \begin{center}
   \includegraphics[width=0.8\textwidth]{pn_junction}
-  \caption{$p$-$n$ junction. Picture from \citet{vanweesbook}.}
+  \caption{$p$-$n$ junction. From \citet{vanweesbook}.}
   \label{fig:pn_junction}
  \end{center}
 \end{figure}
 
-To make a LED one needs a $p$-$n$ junction. This is simply a piece of $p$-type semiconductor and $n$-type semiconductor put together. There is a difference in electron and hole densities across the junction, which results in the diffusion of holes from the $p$-side and electrons from the $n$-side. These recombine and near the junction only the static charges remain, which is called the depletion zone. In this region an electric field exists that repels the electrons and holes that enter the region.
+To make an LED, one needs a $p$-$n$ junction. This is simply a piece of $p$-type semiconductor and $n$-type semiconductor put together. There is a difference in electron and hole densities across the junction, which results in the diffusion of holes from the $p$-side and electrons from the $n$-side. These recombine and near the junction only the static charges remain, which is called the depletion zone. In this region an electric field exists that repels the electrons and holes that enter the region.
 
-If the $p$-type is connected to the positive terminal of a battery, and the $n$-type to the negative terminal (called forward bias), holes from the $p$-side and electrons from the $n$-side are pushed to the depletion zone. The width of the zone is reduced and with enough voltage difference the electrons and holes can go through the depletion zone and recombine with the charge carriers on the other side. Photons with the energy of the band gap of the materials are emitted. This is the basis for a LED.
+If the $p$-type is connected to the positive terminal of a battery, and the $n$-type to the negative terminal (called forward bias), holes from the $p$-side and electrons from the $n$-side are pushed to the depletion zone. The width of the zone is reduced and with enough voltage difference the electrons and holes can go through the depletion zone and recombine with the charge carriers on the other side. Photons with the energy of the band gap of the materials are emitted. This is called electroluminescence and is the basis for an LED.
 
 \subsection{LETs}
 
-\textbf{Hier moet iets over hoe een LET werkt, met de dingen uit de vorige uitlegstukjes. Kan kort!}
+A light-emitting field-effect transistor (LET) is a device that couples the electrical characteristics of a FET to the controlled radiative recombination of the electrons and holes, which are injected into the channel via the source and drain contacts \citep{Muccini}. As seen in figure \ref{fig:LET}, the LET also has characteristics similar to a LED. Important is that the materials are able to sustain both electron and hole currents and efficient electroluminescence emission, to get a high quantum efficiency.
 
 \begin{figure}[!ht]
  \begin{center}
   \includegraphics[width=0.6\textwidth]{fig_B1}
-  \caption{Scheme of LET. (a) Side view. (b) Top view. The device can be thought of as a forward-biased $p$-$n$ junction in FET surroundings. Picture from \citet{Muccini}.}
+  \caption{Scheme of LET. (a) Side view. (b) Top view. The device can be thought of as a sort of forward-biased $p$-$n$ junction. Electrons and holes are injected from the drain (D) and source (S) contacts and recombine within the channel in a position controlled by the gate (G). From \citet{Muccini}.}
   \label{fig:LET}
  \end{center}
 \end{figure}
 
 
-\subsection{Loi}
+\subsection{Organic Devices}
+The previous sections talked about the general structure of different devices, but not much was said about the materials that can be used to make these devices. Only silicon was talked about, however, there are many other suitable materials.
+
+
 The Organic and optoelectronic part of the lecture is of most relevance to the paper. After the introduction into (inorganic) Light Emmitting Transistors the paper focuses on organic devices.  \citep{loinotes}
 
 \subsubsection{Tuneability}
