@@ -1,7 +1,7 @@
 \section{Background}
 % Summarize the themes/aspects from the lecture course which are relevant for the paper which you will discuss. 
 % 
-\textbf{Moet hier nog een stukje? Anders twee kopjes onder elkaar en dat is wat lelijk.}
+In this part the basics are discussed. In order to understand the recent developments in LET technology, first the field effect, and transistor and LED technology must be understood. A short introduction to LETs is also given, and brief consideration to why development of organic semiconductors is important.
  
 \subsection{Transistors}
 
@@ -10,26 +10,24 @@ The ability to on a large scale produce transistors has been one of the biggest 
 \begin{figure}[!ht]
  \begin{center}
   \includegraphics[width=1\textwidth]{doping}
-  \caption{N-type doping and p-type doping. From \citet{vanweesbook}.}
+  \caption{$n$-type doping and $p$-type doping. From \citet{vanweesbook}.}
   \label{fig:doping}
  \end{center}
 \end{figure}
 
-Doping (figure \ref{fig:doping} introduces either extra electrons ($n$-type doping) or extra holes ($p$-type doping) in a material. This is done by putting atoms with different covalent bond forming properties in the crystals. With silicon, which forms 4 covalent bonds, to introduce extra electrons a material which forms 5 covalent bonds (e.g. arsenic) should be used. The extra electron is now free to move. For p-type doping a material that only forms 3 covalent bonds should be used. The `empty' place is a hole which can freely travel through the material.
+Doping (figure \ref{fig:doping}) introduces either extra electrons ($n$-type doping) or extra holes ($p$-type doping) in a material. This is done by putting atoms with different covalent bond forming properties in the crystals. With silicon, which forms 4 covalent bonds, to introduce extra electrons a material which forms 5 covalent bonds (e.g. arsenic) should be used. The extra electron is now free to move. For p-type doping a material that only forms 3 covalent bonds (e.g. boron) should be used. The `empty' place is a hole which can freely travel through the material.
 
-Field-effect transistors are made of a combination of $n$-type and $p$-type semiconductors. The field effect refers to the control of the electrical conductivity of a material by the application of an external electric field. The working of a junction-FET (JFET) illustrates how this field effect is used.
+Field-effect transistors are made of a combination of $n$-type and $p$-type semiconductors. The field effect refers to the control of the electrical conductivity of a material by the application of an external electric field. The working of a junction-FET (JFET) illustrates how this field effect is used. There are other transistor designs that use the field effect in a similar way, a few of which are the MOSFET, MESFET, and the organic OFET.
 
 \begin{figure}[!ht]
  \begin{center}
   \includegraphics[width=0.7\textwidth]{jfet}
-  \caption{A junction field effect transistor, with the position of source, drain and gate shown. Red is the substrate, yellow is the channel. Orange is the depletion zone influenced by the gate voltage.}
+  \caption{A junction field effect transistor, with the position of source (S), drain (D) and gate (G) shown. Red is the substrate, yellow is the channel. Orange is the depletion zone influenced by the gate voltage.}
   \label{fig:JFET}
  \end{center}
 \end{figure}
 
-In figure \ref{fig:JFET} a diagram of a JFET is shown. In this example the channel through which the charge carriers flow (with a voltage difference between source and drain), is made of an $p$-type semiconductor, and the surrounding substrate is made of a $n$-type semiconductor. Therefore the mobile charge carriers in the channel are holes. When the mobile electrons in the substrate are pulled away by a negative voltage applied to the gate, only the static positive charges remain, which forms the depletion zone. This induces a positively charged electric field, which penetrates into the channel and repels the holes there, effectively narrowing the channel. With a high enough gate voltage the channel can be completely `pinched off', resulting in a voltage-controlled switch.
-
-There are other transistor designs that use the field effect in a similar way, a few of which are the MOSFET, MESFET, and the organic OFET. %\textbf{(deze zin mag weg maar verzin dan iets anders afsluitends)}
+In figure \ref{fig:JFET} a diagram of a JFET is shown. In this example the channel through which the charge carriers flow (with a voltage difference between source and drain), is made of a $p$-type semiconductor, and the surrounding substrate is made of an $n$-type semiconductor. Therefore the mobile charge carriers in the channel are holes. When the mobile electrons in the substrate are pulled away by a positive voltage applied to the gate, only the static positive charges remain, \textbf{HELP DIT KLOPT NIET VOLGENS MIJ} which forms the depletion zone. This induces a positively charged electric field, which penetrates into the channel and repels the holes there, effectively narrowing the channel. With a high enough gate voltage the channel can be completely `pinched off', resulting in a voltage-controlled switch.
 
 \subsection{Diodes}
 Not only the transistor has had a big impact on society, the field of light-emitting materials has also seen much progress. From indicator lamps to replacements for incandescent light bulbs, the light-emitting diode (LED) has gained a lot of ground.
@@ -66,7 +64,7 @@ In the previous sections the general structure of different devices were discuss
  \begin{center}
   \includegraphics[width=0.4\textwidth]{zwavelbenzeen}
   \caption{Example of polymeric material. From \citet{Muccini}.}
-  \label{fig:LET}
+  \label{fig:zwavelbenzeen}
  \end{center}
 \end{figure}
 
@@ -74,7 +72,7 @@ Inorganic semiconductors require an expensive and complicated production method 
 
 With bulk inorganic semiconductor material it is not possible to change the bandgap considerably, which for LEDs restricts the wavelength of the light that comes out. One way to overcome this is by making nanocrystals: the size controls the wavelength. For organic semiconductors however it is much easier to change the bandgap. Most of the organic materials have a relative complex molecular structure compared to inorganic materials, and therefore there are more possibilities to adjust the molecule slightly resulting in different properties.
 
-Against the major advantages that organic semiconductors have, there are a few disadvantages as well. For OLEDs the carrier mobility is about five orders of magnitude lower than of inorganic LEDs \citep{Muccini}. Even though the mobility for OLETs can be four orders of magnitude higher than OLEDs, it is still lower than that of inorganic materials. This means that the device reacts more slowly \textbf{(IS DIT WAAR?)}, which is not preferential.
+Against the major advantages that organic semiconductors have, there are a few disadvantages as well. For OLEDs the carrier mobility is about five orders of magnitude lower than of inorganic LEDs \citep{Muccini}. Even though the mobility for OLETs can be four orders of magnitude higher than OLEDs, it is still lower than that of inorganic materials. This means that the device reacts more slowly, which is not preferable.
 
 Although the efficiency of organic devices continues to increase, for high brightness it still is not at the level of inorganic devices. The efficiency is described by the quantum efficiency $\eta$: the fraction of excited carriers that recombine radiatively. The corresponding equation is:
 \[
