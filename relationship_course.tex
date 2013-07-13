@@ -1,8 +1,8 @@
-\section{Relationship to the course (3 to 4 pages) NEEDS DIFFERENT TITLE IS UGLY}
+\section{Background}
 % Summarize the themes/aspects from the lecture course which are relevant for the paper which you will discuss. 
 % 
-% 
-% 
+\textbf{Moet hier nog een stukje? Anders twee kopjes onder elkaar en dat is wat lelijk.}
+ 
 \subsection{Transistors}
 
 The ability to on a large scale produce transistors has been one of the biggest advancements in the 20th century. Transistors and derived devices are necessary components in every modern electronic device. They can amplify currents or switch them off completely. To make these transistors, one needs a material that is capable of showing both characteristics of metals and of insulators, to be able to not only conduct currents, but also switch them off. These materials are called semiconductors, which have a band gap between the valence band and the conduction band. A pure semiconductor material behaves as an insulator, therefore doping of the material is needed to give it the metal-like properties.
@@ -59,29 +59,27 @@ A light-emitting field-effect transistor (LET) is a device that couples the elec
 \end{figure}
 
 
-\subsection{Organic Devices}
-The previous sections talked about the general structure of different devices, but not much was said about the materials that can be used to make these devices. Only silicon was talked about, however, there are many other suitable materials.
+\subsection{Organic Semiconductors}
+In the previous sections the general structure of different devices were discussed, but not much was said about the materials that can be used to make these devices. Only silicon was talked about, however, there are many other suitable materials. A considerable amount of time and effort has been put into the development of organic semiconductors, and not without succes. They are made from polymers, a base building block repeated many times. Often these building blocks are variations on the benzene ring. Organic semiconductors have many advantages over inorganic semiconductors, as summarized in the opto-electronics part of the course \citep{loinotes}. Unfortunately organic semiconductors also have disadvantages, which are surmountable depending on the purpose of the devices.
 
+\begin{figure}[!ht]
+ \begin{center}
+  \includegraphics[width=0.4\textwidth]{zwavelbenzeen}
+  \caption{Example of polymeric material. From \citet{Muccini}.}
+  \label{fig:LET}
+ \end{center}
+\end{figure}
 
-The Organic and optoelectronic part of the lecture is of most relevance to the paper. After the introduction into (inorganic) Light Emmitting Transistors the paper focuses on organic devices.  \citep{loinotes}
+Inorganic semiconductors require an expensive and complicated production method which involves several steps, including photolithography, etching, and metallization. Organic semiconductors on the other hand can be easily printed from a solution, and on many different types of (cheaper) materials such as glass, metal foils, and plastics, which as a bonus gives the possibility of producing flexible semiconductors. The organic semiconductor material itself is also much cheaper and more widely available.
 
-\subsubsection{Tuneability}
-One of the aspects from the lectures that is also covered in the paper is the tunabilty of organic semiconductors. With bulk inorganic semiconductor material it is not possible to change the bandgap a lot. Especially in light producing devices it is necessary to make nanocrystals. These nanocrystal structures are also needed for indirect bandgap meterials like silicon because they need a phonon to complete charge recombination. Without the nanocrystal structure the rocombination will occur via an non-radiative process. For organic semiconductors however it is relativly easy to change the bandgap. Most of the organic materials have a relative complex molecular structure compared to inorganic materials, therefore there are more possibilities to adjust the molecule slightly rusulting in different properties. 
-\subsubsection{Easy and low-cost production}
-An other advantage of organic semiconductors that is mentioned both in the lectures and in the article are the favorable production methods. Inorganic semiconductors require an expensive and complicated production method. (Iets uitleggen over litografie en etching etc) Organic semiconductors on the other hand can be easily printed from a solution. The solution can be printed on many different types of (cheaper) materials such as, glass, metal foils and plastics, which give the possibility of producing flexible semiconductors. Finally the costs of the organic semiconductor material itself is much cheaper and more widely available.
-\subsubsection{Other differences}
--Mobility of charge
+With bulk inorganic semiconductor material it is not possible to change the bandgap considerably, which for LEDs restricts the wavelength of the light that comes out. One way to overcome this is by making nanocrystals: the size controls the wavelength. For organic semiconductors however it is much easier to change the bandgap. Most of the organic materials have a relative complex molecular structure compared to inorganic materials, and therefore there are more possibilities to adjust the molecule slightly resulting in different properties.
 
-Mentioned briefly in both the paper and lectures is the mobility of charge carriers. For OLEDs the mobility is about 5 orders of magnitude lower than of inorganic LEDs. However the article describes a mobility for OLETs that can be 4 orders of magnitude higher, but still lower than that of inorganic materials.
+Against the major advantages that organic semiconductors have, there are a few disadvantages as well. For OLEDs the carrier mobility is about five orders of magnitude lower than of inorganic LEDs \citep{Muccini}. Even though the mobility for OLETs can be four orders of magnitude higher than OLEDs, it is still lower than that of inorganic materials. This means that the device reacts more slowly \textbf{(IS DIT WAAR?)}, which is not preferential.
 
--Lower efficiency for organic devices
-
-However the efficiency of organic devices continues to increase it still is not at the level of inorganic devices for high brightness. The efficiency of light emitting devices is often described by the quantum efficiency: the ``fraction of excited carriers that recombine radiatively''. The corresponding equation is
-
+Although the efficiency of organic devices continues to increase, for high brightness it still is not at the level of inorganic devices. The efficiency is described by the quantum efficiency $\eta$: the fraction of excited carriers that recombine radiatively. The corresponding equation is:
 \[
  \eta = \frac{R_{r}}{R} = \frac{\tau_{nr}}{(\tau_{tr}+\tau_{nr})},
 \]
-where $R=$ Total recombination rate, $R_{r}$=Radiative recombination rate, $\tau_{tr}=$Radiative lifetime, $\tau_{nr}=$Non-radiative lifetime. The goal is to have an as high as possible Radiative recombination rate. 
+with $R=$ total recombination rate, $R_{r}=$ radiative recombination rate, $\tau_{tr}=$ radiative lifetime, and $\tau_{nr}=$ non-radiative lifetime. The goal is to have an as high as possible radiative recombination rate, because only those recombinations emit light.
 
--Lower lifetime and higher vulnerability to the environment for OSC
-Finally the lower lifetime of organic semiconductors is mentioned briefly. Organic semiconductors are more vulnorable to the environment because the organic materials react more easily with water or oxygen. Furthermore their lifetime is lower compared to inorganic semicunductors. 
+Finally the lower lifetime of organic semiconductors is worth some consideration. Their lifetime is lower compared to inorganic semiconductors, and they are more vulnerable to the environment. This is because organic materials react more easily with water or oxygen. 
